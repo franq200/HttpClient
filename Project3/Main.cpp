@@ -51,6 +51,10 @@ int main() {
             std::cerr << "JSON parse error: " << e.what() << "\n";
         }
     }
+    for (auto el : people)
+    {
+        std::cout << el.firstName;
+    }
     curl_global_cleanup();
     return 0;
 }
